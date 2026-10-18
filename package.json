@@ -1,0 +1,21 @@
+{
+  "name": "mentora",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --configLoader runner",
+    "dev:netlify": "node scripts/dev-netlify.mjs",
+    "sync:events": "node --env-file=.env.local scripts/sync-events.mjs",
+    "build": "vite build --configLoader runner",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/server": "^1.8.1",
+    "@supabase/supabase-js": "^2.57.0",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
